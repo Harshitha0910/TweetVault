@@ -1,3 +1,4 @@
+require('dotenv').config(); 
 const express = require('express');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
@@ -14,7 +15,7 @@ const tweetRoutes = require('./routes/tweets.js');
 const app = express();
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://SheryUser:cherry@cluster0.ibrw7.mongodb.net/tweetOrganiser")
+mongoose.connect(process.env.MONGO_URL)
 
 // Rate limiting middleware
 const limiter = rateLimit({
