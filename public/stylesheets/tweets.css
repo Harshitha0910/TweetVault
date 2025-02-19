@@ -1,0 +1,150 @@
+/* Main tweet list container */
+.tweet-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+/* Tweet container list */
+#tweetContainer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Individual tweet card */
+.tweet {
+    background: #ffffff;
+    border: 1px solid #e1e8ed;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Tweet header with profile image and user info */
+.tweet-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.tweet-header div {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-header strong {
+    font-size: 15px;
+    color: #14171a;
+    margin-bottom: 2px;
+}
+
+.handle {
+    color: #657786;
+    font-size: 14px;
+}
+
+/* Tweet text content */
+.tweet-text {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #14171a;
+    margin: 0 0 12px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Media section */
+.tweet-media {
+    margin: 12px 0;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.tweet-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #e1e8ed;
+}
+
+/* External links section */
+.tweet-links {
+    margin: 12px 0;
+}
+
+.tweet-link {
+    display: inline-block;
+    color: #1da1f2;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    background: #f8f9fa;
+    border-radius: 20px;
+    margin: 4px 0;
+}
+
+.tweet-link:hover {
+    background: #e8f5fe;
+}
+
+/* Tweet footer */
+.tweet-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e1e8ed;
+}
+
+.tweet-footer small {
+    color: #657786;
+    font-size: 13px;
+}
+
+.tweet-footer .btn {
+    background-color: transparent;
+    color: #1da1f2;
+    border: 1px solid #1da1f2;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.tweet-footer .btn:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+}
+
+/* Hover effect on entire tweet */
+.tweet:hover {
+    background-color: #f8f9fa;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .tweet-list {
+        margin: 10px auto;
+    }
+
+    .tweet {
+        padding: 12px;
+    }
+
+    .tweet-footer {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
